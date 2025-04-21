@@ -1,0 +1,2 @@
+all:
+	clang++ -std=c++17 -O3 -I./glm -I./rapidjson-1.1.0/include -I./SDL2/ -I./SDL2_image/ -I./SDL2_mixer/ -I./SDL2_ttf/ -I./Lua/ -I./LuaBridge/ -I./ -I./box2d/ -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image -llua5.4 -Wno-deprecated-declarations ./*.cpp ./box2d/collision/*.cpp ./box2d/common/*.cpp ./box2d/dynamics/*.cpp ./box2d/rope/*.cpp -o game_engine_linux

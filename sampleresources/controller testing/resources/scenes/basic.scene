@@ -1,0 +1,68 @@
+{
+	"actors": [
+		{
+			"name": "camera",
+			"components": {
+				"1": {
+					"type": "CameraManager"
+				}
+			}
+		},
+		{
+			"name": "p1",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"collider_type": "circle",
+					"radius": 0.45,
+					"density": 0.5,
+					"gravity_scale": 0,
+					"friction": 0.99,
+					"x": -2.0
+				},
+				"2": {
+					"type": "GamepadControl",
+					"cID": 0
+				},
+				"3": {
+					"type": "SpriteRenderer",
+					"color_change": true,
+					"cID": 0,
+					"sprite": "circle"
+				}
+			}
+		},
+		{
+			"name": "p2",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"collider_type": "circle",
+					"radius": 0.45,
+					"density": 0.5,
+					"gravity_scale": 0,
+					"friction": 0.99,
+					"x": 2.0
+				},
+				"2": {
+					"type": "GamepadControl",
+					"cID": 1
+				},
+				"3": {
+					"type": "SpriteRenderer",
+					"color_change": true,
+					"cID": 1,
+					"sprite": "circle"
+				}
+			}
+		},
+		{
+			"name": "GameManager",
+			"components": {
+				"1": {
+					"type": "GameManager"
+				}
+			}
+		}
+	]
+}
